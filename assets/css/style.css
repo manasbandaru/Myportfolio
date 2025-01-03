@@ -457,6 +457,65 @@ body.dark-mode .about-text h2 {
 
 /* ----- PROJECTS BOX ----- */
 
+/*new Project box code*/
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: var(--color-white);
+    border-radius: 10px; /* Maintain consistency with rounded corners */
+    box-shadow: 0 4px 8px var(--first-shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--first-shadow-color);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    color: var(--color-dark);
+}
+
+.project-description {
+    font-size: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    color: var(--text-color-second);
+}
+
+.project-link {
+    display: inline-block;
+    margin: 0 1rem 1rem 1rem;
+    font-weight: 500;
+    color: var(--text-color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--first-color-hover);
+}
+
+
+/*end new code*/
+
+
 /* Keep existing styles */
 body.dark-mode .project-card h3 {
     color: var(--color-dark) !important; /* Dark mode main headings are white for contrast */
