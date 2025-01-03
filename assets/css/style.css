@@ -520,6 +520,9 @@ body.dark-mode .about-text h2 {
 body.dark-mode .project-card h3 {
     color: var(--color-dark) !important; /* Dark mode main headings are white for contrast */
 }
+body.dark-mode .project-card p {
+    color: var(--color-dark) !important; /* Dark mode main headings are white for contrast */
+}
 
 .project-container {
     display: flex;
